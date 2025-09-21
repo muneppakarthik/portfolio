@@ -1,0 +1,22 @@
+.bgshadow-container {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-position: center;
+  height: 400px;
+  background-size: cover;
+  background: url("/images/bg.jpg");
+
+  .overlay {
+    background-image: linear-gradient(
+      180deg,
+      rgba(240, 240, 246, 0.93) 0%,
+      rgba(240, 240, 246, 0.96) 70%,
+      rgba(240, 240, 246, 0.99) 80%,
+      rgba(240, 240, 246, 1) 100%
+    );
+    height: 100%;
+    width: 100%;
+  }
+}

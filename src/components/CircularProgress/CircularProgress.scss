@@ -1,0 +1,15 @@
+.circular-progress {
+  .trail,
+  .path {
+    transition: stroke-dashoffset 0.5s ease;
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+
+  .progress-text {
+    // font-size: 1rem;
+    fill: #333;
+    font-weight: bold;
+    padding: 3px;
+  }
+}

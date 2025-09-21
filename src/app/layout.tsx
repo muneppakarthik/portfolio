@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Poppins, Roboto_Mono } from "next/font/google";
+import "./globals.scss";
+import "../styles/icons.scss";
+import Footer from "@/components/footer/footer";
+import Overview from "@/components/overview/overview";
+import Menu from "@/components/menu/menu";
+import BgShadow from "@/components/bgshadow/bgshadow";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-poppins",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const robotoMono = Roboto_Mono({
   subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -24,8 +31,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKB4Imkb9n6...etc"
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+      </head>
+      <body className={`${poppins.variable} ${robotoMono.variable}`}>
+        <div className="app-root">
+          <div className="app-wrapper">
+            <Overview />
+            <main>
+              <BgShadow />
+              {children}
+              <Footer />
+            </main>
+            <aside>
+              <Menu />
+            </aside>
+          </div>
+        </div>
       </body>
     </html>
   );
