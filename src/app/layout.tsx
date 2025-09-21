@@ -9,7 +9,7 @@ import BgShadow from "@/components/bgshadow/bgshadow";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "800"],
   variable: "--font-poppins",
 });
 
