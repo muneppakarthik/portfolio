@@ -1,0 +1,14 @@
+.get-in-touch-container {
+  margin-bottom: 30px;
+  &__wrapper {
+    padding: 30px;
+    background-color: var(--dark-light-white);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .button-wrapper {
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+  }
+}
