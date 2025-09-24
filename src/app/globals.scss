@@ -66,6 +66,7 @@ a {
     position: relative;
     flex: 1;
     padding: 20px 30px;
+    overflow: hidden;
   }
 }
 
@@ -74,3 +75,7 @@ a {
     color-scheme: dark;
   }
 } */
+
+.card-shadow {
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+}

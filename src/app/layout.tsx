@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Roboto_Mono } from "next/font/google";
+import "keen-slider/keen-slider.min.css";
 import "./globals.scss";
 import "../styles/icons.scss";
 import Footer from "@/components/footer/footer";
