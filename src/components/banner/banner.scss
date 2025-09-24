@@ -8,7 +8,17 @@
   padding: 60px;
   background-color: var(--black-2);
   margin-bottom: 30px;
+  position: relative;
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: -30px;
+    width: calc(90%);
+    left: 5%;
+    height: 30px;
+    background-color: var(--dark-light-white);
+  }
   //   &__overlay {
   //     background-color: var(--foreground);
   //     position: absolute;

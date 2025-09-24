@@ -7,7 +7,9 @@ const Banner = () => {
     <div className="banner-container">
       {/* <div className="banner-container__overlay" /> */}
       <div className="banner-container__block">
-        <h2>Discover my Amazing Art Space!</h2>
+        <h2>
+          Discover my Amazing <br /> Art Space!
+        </h2>
         <p>
           <i>{`<code> `}</i>I build &nbsp;
           <span>web interface.</span>
