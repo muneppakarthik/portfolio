@@ -3,12 +3,12 @@
 // import dynamic from "next/dynamic";
 // const Slider = dynamic(() => import("react-slick"), { ssr: false });
 import React from "react";
-import { useKeenSlider } from "keen-slider/react";
+import { useKeenSlider, KeenSliderOptions } from "keen-slider/react";
 import "./CustomSlider.scss";
 
 interface CustomSliderProps<T> {
   items: T[];
-  settings?: any;
+  settings?: KeenSliderOptions;
   renderItem?: (item: T, index: number) => React.ReactNode;
   className?: string;
 }
@@ -19,11 +19,15 @@ export default function CustomSlider<T>({
   renderItem,
   className = "",
 }: CustomSliderProps<T>) {
+  const slidesConfig =
+    typeof settings?.slides === "object" && settings.slides !== null
+      ? settings.slides
+      : {};
   const [sliderRef] = useKeenSlider({
     slides: {
       perView: 3,
       spacing: 30,
-      ...(settings.slides || {}),
+      ...slidesConfig,
     },
     ...settings,
   });

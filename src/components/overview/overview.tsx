@@ -5,7 +5,6 @@ import CircularProgress from "../CircularProgress/CircularProgress";
 import Horizentalprogress from "../horizentalprogress/horizentalprogress";
 
 const Overview = () => {
-  const percentage = 66;
   return (
     <div className="overview-wrapper">
       <div className="profile-card">

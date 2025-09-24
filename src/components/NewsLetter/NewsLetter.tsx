@@ -49,7 +49,7 @@ const NewsLetter = () => {
       <SectionHeading label="Newsletter" />
       <CustomSlider
         items={slides}
-        renderItem={(item, i) => <NewsLetterCard {...item} />}
+        renderItem={(item) => <NewsLetterCard {...item} />}
       />
     </div>
   );
