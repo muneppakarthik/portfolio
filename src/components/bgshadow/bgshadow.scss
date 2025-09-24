@@ -7,11 +7,10 @@
   height: 400px;
   background: linear-gradient(
       0deg,
-      rgba(240, 240, 246, 0.93) 0%,
-      rgba(240, 240, 246, 0.9) 20%,
-      rgba(240, 240, 246, 0.9) 30%,
-      rgba(240, 240, 246, 0.93) 100%
+      rgba(240, 240, 246, 0.99) 0%,
+      rgba(240, 240, 246, 0.99) 0%,
+      rgba(240, 240, 246, 0.95) 30%,
+      rgba(240, 240, 246, 0.9) 100%
     ),
-    url("/images/bg.jpg") 40% -100px / cover no-repeat;
-  z-index: -1;
+    url("/images/bg.jpg") 40% -250px / cover no-repeat;
 }
