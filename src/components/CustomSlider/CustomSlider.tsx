@@ -6,12 +6,19 @@ import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "./CustomSlider.scss";
 
-export default function CustomSlider({
+interface CustomSliderProps<T> {
+  items: T[];
+  settings?: any;
+  renderItem?: (item: T, index: number) => React.ReactNode;
+  className?: string;
+}
+
+export default function CustomSlider<T>({
   items = [],
   settings = {},
   renderItem,
   className = "",
-}) {
+}: CustomSliderProps<T>) {
   const [sliderRef] = useKeenSlider({
     slides: {
       perView: 3,
@@ -25,7 +32,7 @@ export default function CustomSlider({
     <div className={`keen-slider custom-slider ${className}`} ref={sliderRef}>
       {items.map((item, index) => (
         <div key={index} className="keen-slider__slide">
-          {renderItem ? renderItem(item, index) : item}
+          {renderItem ? renderItem(item, index) : null}
         </div>
       ))}
     </div>
