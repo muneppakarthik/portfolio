@@ -1,0 +1,12 @@
+.my-services-container {
+  margin-bottom: 30px;
+  &__wrapper {
+    display: flex;
+    gap: 15px;
+    &__service-list-item {
+      width: calc(100% - 15px);
+      background-color: var(--dark-light-white);
+      padding: 15px;
+    }
+  }
+}
