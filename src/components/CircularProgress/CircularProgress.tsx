@@ -1,5 +1,5 @@
 import React from "react";
-import "./circularProgress.scss";
+import "./CircularProgress.scss";
 
 interface Props {
   value: number; // 0 to 100

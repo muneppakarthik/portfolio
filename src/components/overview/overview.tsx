@@ -1,7 +1,7 @@
 import React from "react";
 import "./overview.scss";
 import Image from "next/image";
-import CircularProgress from "../circularProgress/circularProgress";
+import CircularProgress from "../CircularProgress/circularProgress";
 // import Horizentalprogress from "@/components/horizentalprogress/horizentalprogress";
 
 const Overview = () => {
