@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import SectionHeading from "../sectionHeading/SectionHeading";
 import "./WorkEducationHistory.scss";
 import TimeLineCard from "./TimeLineCard";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./MyServices.scss";
-import SectionHeading from "../SectionHeading/SectionHeading";
-import Button from "../Button/Button";
+import SectionHeading from "../sectionHeading/SectionHeading";
+import Button from "../button/Button";
 
 const MyServices = () => {
   const data = [
