@@ -11,7 +11,7 @@ interface Props {
 const CircularProgress: React.FC<Props> = ({
   value,
   size = 45,
-  strokeWidth = 2,
+  strokeWidth = 4,
   color = "#f46258",
 }) => {
   const radius = (size - strokeWidth) / 2;

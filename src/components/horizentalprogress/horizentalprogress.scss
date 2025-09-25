@@ -6,7 +6,7 @@
     margin-bottom: 5px;
   }
   .progress-block {
-    height: 2px;
+    height: 4px;
     border-radius: 5px;
     background-color: var(--primary);
     position: relative;
@@ -15,7 +15,7 @@
       top: 0;
       left: 0;
       background-color: var(--orange);
-      height: 2px;
+      height: 4px;
       border-radius: 5px;
     }
   }

@@ -21,6 +21,14 @@ const WorkEducationHistory = () => {
       description:
         "Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri",
     },
+    {
+      title: "University of Toronto",
+      startDate: "jan 2018",
+      endDate: "may 2020",
+      profession: "Student",
+      description:
+        "Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson, Missouri",
+    },
   ];
   return (
     <div className="work-education-history">

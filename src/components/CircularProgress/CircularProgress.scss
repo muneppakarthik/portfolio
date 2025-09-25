@@ -8,8 +8,10 @@
 
   .progress-text {
     // font-size: 1rem;
-    fill: #333;
-    font-weight: bold;
+    fill: var(--primary);
+    font-weight: 400;
     padding: 3px;
+    font-size: 12px;
+    text-align: center;
   }
 }

@@ -8,13 +8,15 @@ const Overview = () => {
   return (
     <div className="overview-wrapper">
       <div className="profile-card">
-        <Image
-          src="/images/profile.jpg"
-          width={90}
-          height={90}
-          className="profile-card__avatar"
-          alt="avatar"
-        />
+        <div className="image-block">
+          <Image
+            src="/images/profile.jpg"
+            width={90}
+            height={90}
+            className="profile-card__avatar"
+            alt="avatar"
+          />
+        </div>
         <h3>Artur Carter</h3>
         <h4>Front-end Deweloper</h4>
         <h4>Ui/UX Designer</h4>
@@ -59,6 +61,9 @@ const Overview = () => {
           <Horizentalprogress lable="html" value="90" />
           <Horizentalprogress lable="CSS" value="90" />
           <Horizentalprogress lable="JavaScript" value="80" />
+          <Horizentalprogress lable="html" value="90" />
+          <Horizentalprogress lable="CSS" value="90" />
+          <Horizentalprogress lable="JavaScript" value="80" />
         </div>
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">
@@ -66,6 +71,14 @@ const Overview = () => {
             <li>
               <i className="fa-solid fa-check" />
               <span>Bootstrap, Materialize</span>
+            </li>
+            <li>
+              <i className="fa-solid fa-check" />
+              <span>Stylus, Sass, Less</span>
+            </li>
+            <li>
+              <i className="fa-solid fa-check" />
+              <span>Gulp, Webpack, Grunt</span>
             </li>
             <li>
               <i className="fa-solid fa-check" />
@@ -92,6 +105,9 @@ const Overview = () => {
           </li>
           <li>
             <i className="icon fa-brands fa-square-x-twitter"></i>
+          </li>
+          <li>
+            <i className="icon fa-brands fa-github"></i>
           </li>
           <li>
             <i className="icon fa-brands fa-github"></i>
