@@ -3,7 +3,7 @@ import { Poppins, Roboto_Mono } from "next/font/google";
 import "keen-slider/keen-slider.min.css";
 import "./globals.scss";
 import "../styles/icons.scss";
-// import Overview from "@/components/Overview/Overview";
+import Overview from "@/components/Overview/Overview";
 // import BgShadow from "@/components/BgShadow/Bgshadow";
 // import Footer from "@/components/Footer/Footer";
 // import Menu from "@/components/Menu/Menu";
@@ -44,7 +44,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${robotoMono.variable}`}>
         <div className="app-root">
           <div className="app-wrapper">
-            {/* <Overview /> */}
+            <Overview />
             <main>
               {/* <BgShadow /> */}
               {children}
