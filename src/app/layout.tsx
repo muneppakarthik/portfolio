@@ -3,10 +3,10 @@ import { Poppins, Roboto_Mono } from "next/font/google";
 import "keen-slider/keen-slider.min.css";
 import "./globals.scss";
 import "../styles/icons.scss";
-import Footer from "@/components/Footer/Footer";
 import Overview from "@/components/Overview/Overview";
-import Menu from "@/components/Menu/Menu";
 import BgShadow from "@/components/BgShadow/BgShadow";
+import Footer from "@/components/Footer/Footer";
+import Menu from "@/components/Menu/Menu";
 
 const poppins = Poppins({
   subsets: ["latin"],
