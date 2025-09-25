@@ -2,11 +2,22 @@
   margin-bottom: 30px;
   &__wrapper {
     display: flex;
-    gap: 15px;
+    gap: 30px;
+    flex-wrap: wrap;
     &__service-list-item {
-      width: calc(100% - 15px);
+      width: calc(33.33% - 20px);
       background-color: var(--dark-light-white);
-      padding: 15px;
+      padding: 30px;
+
+      h5 {
+        margin-bottom: 15px;
+        color: var(--secondary);
+        font-size: 14px;
+        font-weight: 600;
+      }
+      p {
+        margin-bottom: 15px;
+      }
     }
   }
 }

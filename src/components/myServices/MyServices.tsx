@@ -17,6 +17,30 @@ const MyServices = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
     },
+    {
+      title: "Web Development",
+      buttonLabel: "Show more",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+    },
+    {
+      title: "Web Development",
+      buttonLabel: "Show more",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+    },
+    {
+      title: "Web Development",
+      buttonLabel: "Show more",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+    },
+    {
+      title: "Web Development",
+      buttonLabel: "Show more",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+    },
   ];
   return (
     <div className="my-services-container">
