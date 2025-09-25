@@ -11,11 +11,11 @@ const ContactInformation = () => {
       },
       {
         label: "Country",
-        value: "Canada",
+        value: "Toronto",
       },
       {
         label: "Country",
-        value: "Canada",
+        value: "20 Dellbank Rd",
       },
     ],
     [
@@ -58,10 +58,13 @@ const ContactInformation = () => {
             key={index}
           >
             {contactVariants.map((item, ind) => (
-              <React.Fragment key={index + ind}>
-                <h5>{item.label}</h5>
+              <div
+                className="contact-information-container__wrapper__service-list-item__block"
+                key={index + ind}
+              >
+                <h5>{item.label}:</h5>
                 <p>{item.value}</p>
-              </React.Fragment>
+              </div>
             ))}
           </div>
         ))}
