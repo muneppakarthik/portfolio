@@ -1,5 +1,5 @@
 import React from "react";
-import "./horizentalprogress.scss";
+import "./Horizentalprogress.scss";
 
 const Horizentalprogress = ({ lable = "", value = "" }) => {
   return (

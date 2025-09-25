@@ -1,5 +1,5 @@
 import React from "react";
-import "./button.scss";
+import "./Button.scss";
 
 const Button = ({ label = "Explore now" }) => {
   return (

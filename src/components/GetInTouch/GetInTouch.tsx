@@ -2,7 +2,7 @@ import React from "react";
 import "./GetInTouch.scss";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import Input from "../Input/Input";
-import Button from "../button/button";
+import Button from "../Button/Button";
 
 const GetInTouch = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./bgshadow.scss";
+import "./BgShadow.scss";
 
 const BgShadow = () => {
   return <div className="bgshadow-container"></div>;

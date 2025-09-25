@@ -1,7 +1,7 @@
 import "./page.scss";
-import AboutDeveloperDetails from "@/components/about-developer-details/AboutDeveloperDetails";
-import Banner from "@/components/banner/banner";
-import MyServices from "@/components/myServices/MyServices";
+import AboutDeveloperDetails from "@/components/AboutDeveloperDetails/AboutDeveloperDetails";
+import Banner from "@/components/Banner/Banner";
+import MyServices from "@/components/MyServices/MyServices";
 import ContactInformation from "@/components/ContactInformation/ContactInformation";
 import GetInTouch from "@/components/GetInTouch/GetInTouch";
 import NewsLetter from "@/components/NewsLetter/NewsLetter";
