@@ -1,7 +1,7 @@
 import React from "react";
 import "./HorizentalProgress.scss";
 
-const Horizentalprogress = ({ lable = "", value = "" }) => {
+const HorizentalProgress = ({ lable = "", value = "" }) => {
   return (
     <div className="horizental-progress-wrapper">
       <div className="lable-block">
@@ -15,4 +15,4 @@ const Horizentalprogress = ({ lable = "", value = "" }) => {
   );
 };
 
-export default Horizentalprogress;
+export default HorizentalProgress;
