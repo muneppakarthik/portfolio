@@ -29,7 +29,7 @@ const NewsLetterCard = ({
         <p className="newsletter-container__card-item__description">
           {description}
         </p>
-        <Button label={buttonLabel} />
+        <Button label={buttonLabel} variant="outline" />
       </div>
     </div>
   );

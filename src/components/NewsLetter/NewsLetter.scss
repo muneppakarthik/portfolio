@@ -23,10 +23,23 @@
       height: 190px;
     }
     &__date {
+      font-size: 12px;
+      background-color: var(--light-gray-bg-3);
+      box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+      border-radius: 15px;
+      padding: 5px 15px;
+      width: fit-content;
+      margin-bottom: 15px;
     }
     &__title {
+      margin-bottom: 15px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--secondary);
+      line-height: 1.2;
     }
     &__description {
+      margin-bottom: 15px;
     }
   }
 }
