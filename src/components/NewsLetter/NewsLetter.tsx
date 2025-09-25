@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import CustomSlider from "@/components/CustomSlider/CustomSlider";
-import NewsLetterCard from "@/components/NewsLetter/NewsLetterCard";
+// import CustomSlider from "@/components/CustomSlider/CustomSlider";
+// import NewsLetterCard from "@/components/NewsLetter/NewsLetterCard";
 import "./NewsLetter.scss";
-import SectionHeading from "@/components/SectionHeading/SectionHeading";
+// import SectionHeading from "@/components/SectionHeading/SectionHeading";
 
 const NewsLetter = () => {
   const slides = [
@@ -46,11 +46,11 @@ const NewsLetter = () => {
   ];
   return (
     <div className="newsletter-container">
-      <SectionHeading label="Newsletter" />
+      {/* <SectionHeading label="Newsletter" />
       <CustomSlider
         items={slides}
         renderItem={(item) => <NewsLetterCard {...item} />}
-      />
+      /> */}
     </div>
   );
 };

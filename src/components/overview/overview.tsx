@@ -1,8 +1,8 @@
 import React from "react";
 import "./Overview.scss";
 import Image from "next/image";
-import CircularProgress from "@/components/CircularProgress/CircularProgress";
-import Horizentalprogress from "@/components/Horizentalprogress/Horizentalprogress";
+// import CircularProgress from "@/components/CircularProgress/CircularProgress";
+// import Horizentalprogress from "@/components/Horizentalprogress/Horizentalprogress";
 
 const Overview = () => {
   return (
@@ -42,7 +42,7 @@ const Overview = () => {
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">
           <ul className="profile-about__block__circle">
-            <li>
+            {/* <li>
               <CircularProgress value={100} />
               <span>French</span>
             </li>
@@ -53,17 +53,17 @@ const Overview = () => {
             <li>
               <CircularProgress value={70} />
               <span>Spanish</span>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">
-          <Horizentalprogress lable="html" value="90" />
+          {/* <Horizentalprogress lable="html" value="90" />
           <Horizentalprogress lable="CSS" value="90" />
           <Horizentalprogress lable="JavaScript" value="80" />
           <Horizentalprogress lable="html" value="90" />
           <Horizentalprogress lable="CSS" value="90" />
-          <Horizentalprogress lable="JavaScript" value="80" />
+          <Horizentalprogress lable="JavaScript" value="80" /> */}
         </div>
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">

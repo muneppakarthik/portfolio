@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "@/components/Button/Button";
+// import Button from "@/components/Button/Button";
 
 const TimeLineCard = ({
   title = "",
@@ -33,7 +33,7 @@ const TimeLineCard = ({
       <p className="work-education-history__card-item__description">
         {description}
       </p>
-      <Button variant="outline" label="Recommendation" />
+      {/* <Button variant="outline" label="Recommendation" /> */}
     </div>
   );
 };

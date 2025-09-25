@@ -1,6 +1,6 @@
 import React from "react";
 import "./Banner.scss";
-import Button from "@/components/Button/Button";
+// import Button from "@/components/Button/Button";
 
 const Banner = () => {
   return (
@@ -15,7 +15,7 @@ const Banner = () => {
           <span>web interface.</span>
           <i>{`</code> `}</i>
         </p>
-        <Button />
+        {/* <Button /> */}
       </div>
     </div>
   );
