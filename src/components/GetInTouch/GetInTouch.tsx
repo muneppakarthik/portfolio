@@ -1,7 +1,7 @@
 import React from "react";
 import "./GetInTouch.scss";
-import SectionHeading from "../SectionHeading/SectionHeading";
-import Input from "../Input/Input";
+import SectionHeading from "@/components/SectionHeading/SectionHeading";
+import Input from "@/components/Input/Input";
 import Button from "@/components/Button/Button";
 
 const GetInTouch = () => {

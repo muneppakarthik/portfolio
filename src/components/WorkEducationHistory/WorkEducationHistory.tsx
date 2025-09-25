@@ -1,7 +1,7 @@
 import React from "react";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import SectionHeading from "@/components/SectionHeading/SectionHeading";
 import "./WorkEducationHistory.scss";
-import TimeLineCard from "./TimeLineCard";
+import TimeLineCard from "@/components/WorkEducationHistory/TimeLineCard";
 
 const WorkEducationHistory = () => {
   const educationHistory = [
