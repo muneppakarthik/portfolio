@@ -9,9 +9,9 @@ const GetInTouch = () => {
     <div className="get-in-touch-container">
       <SectionHeading label="Get in touch" />
       <div className="get-in-touch-container__wrapper card-shadow">
-        <Input icon="fa-user" />
-        <Input icon="fa-at" />
-        <Input icon="fa-envelope" textarea={true} />
+        <Input icon="fa-user" placeHolder="Name" />
+        <Input icon="fa-at" placeHolder="Email" />
+        <Input icon="fa-envelope" textarea={true} placeHolder="Message" />
         <Button label="Send Message" />
       </div>
     </div>

@@ -28,9 +28,8 @@ body {
   overflow-x: hidden;
 }
 
-body {
+* {
   color: var(--primary);
-  background: var(--background);
   font-family: var(--font-poppins), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,6 +39,10 @@ body {
   font-style: normal;
   padding: 15px;
   letter-spacing: 0.25px;
+}
+
+body {
+  background: var(--background);
 }
 
 code,
