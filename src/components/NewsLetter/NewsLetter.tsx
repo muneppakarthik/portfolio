@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import CustomSlider from "../customSlider/CustomSlider";
+import CustomSlider from "../CustomSlider/CustomSlider";
 import NewsLetterCard from "./NewsLetterCard";
 import "./NewsLetter.scss";
-import SectionHeading from "../sectionHeading/SectionHeading";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const NewsLetter = () => {
   const slides = [

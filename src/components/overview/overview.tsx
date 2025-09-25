@@ -1,8 +1,8 @@
 import React from "react";
 import "./Overview.scss";
 import Image from "next/image";
-import CircularProgress from "../circularProgress/CircularProgress";
-import Horizentalprogress from "../horizentalprogress/Horizentalprogress";
+import CircularProgress from "../CircularProgress/CircularProgress";
+import Horizentalprogress from "../Horizentalprogress/Horizentalprogress";
 
 const Overview = () => {
   return (

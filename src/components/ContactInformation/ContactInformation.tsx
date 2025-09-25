@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactInformation.scss";
-import SectionHeading from "../sectionHeading/SectionHeading";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const ContactInformation = () => {
   const contactDetails = [

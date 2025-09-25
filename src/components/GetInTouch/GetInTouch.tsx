@@ -1,8 +1,8 @@
 import React from "react";
 import "./GetInTouch.scss";
-import SectionHeading from "../sectionHeading/SectionHeading";
-import Input from "../input/Input";
-import Button from "../button/Button";
+import SectionHeading from "../SectionHeading/SectionHeading";
+import Input from "../Input/Input";
+import Button from "../Button/Button";
 
 const GetInTouch = () => {
   return (
