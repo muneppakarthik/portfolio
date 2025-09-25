@@ -29,7 +29,7 @@ const MyServices = () => {
           >
             <h5>{item.title}</h5>
             <p>{item.description}</p>
-            <Button label={item.buttonLabel} />
+            <Button label={item.buttonLabel} variant="outline" />
           </div>
         ))}
       </div>
