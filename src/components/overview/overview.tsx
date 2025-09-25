@@ -1,5 +1,5 @@
 import React from "react";
-import "./Overview.scss";
+import "./overview.scss";
 import Image from "next/image";
 // import CircularProgress from "@/components/CircularProgress/CircularProgress";
 // import Horizentalprogress from "@/components/Horizentalprogress/Horizentalprogress";
