@@ -2,7 +2,7 @@ import React from "react";
 import "./overview.scss";
 import Image from "next/image";
 import CircularProgress from "../CircularProgress/CircularProgress";
-// import Horizentalprogress from "@/components/horizentalprogress/horizentalprogress";
+import Horizentalprogress from "../Horizentalprogress/Horizentalprogress";
 
 const Overview = () => {
   return (
@@ -58,12 +58,12 @@ const Overview = () => {
         </div>
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">
-          {/* <Horizentalprogress lable="html" value="90" />
+          <Horizentalprogress lable="html" value="90" />
           <Horizentalprogress lable="CSS" value="90" />
           <Horizentalprogress lable="JavaScript" value="80" />
           <Horizentalprogress lable="html" value="90" />
           <Horizentalprogress lable="CSS" value="90" />
-          <Horizentalprogress lable="JavaScript" value="80" /> */}
+          <Horizentalprogress lable="JavaScript" value="80" />
         </div>
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">
