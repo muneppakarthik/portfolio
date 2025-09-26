@@ -1,8 +1,8 @@
 import React from "react";
 import "./overview.scss";
 import Image from "next/image";
-import CircularProgress from "@/components/circularprogress/circularprogress";
-import Horizentalprogress from "@/components/horizentalprogress/horizentalprogress";
+import CircularProgress from "../circularprogress/CircularProgress";
+import HorizentalProgress from "../horizentalprogress/horizentalprogress";
 
 const Overview = () => {
   return (
@@ -58,12 +58,12 @@ const Overview = () => {
         </div>
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">
-          <Horizentalprogress lable="html" value="90" />
-          <Horizentalprogress lable="CSS" value="90" />
-          <Horizentalprogress lable="JavaScript" value="80" />
-          <Horizentalprogress lable="html" value="90" />
-          <Horizentalprogress lable="CSS" value="90" />
-          <Horizentalprogress lable="JavaScript" value="80" />
+          <HorizentalProgress lable="html" value="90" />
+          <HorizentalProgress lable="CSS" value="90" />
+          <HorizentalProgress lable="JavaScript" value="80" />
+          <HorizentalProgress lable="html" value="90" />
+          <HorizentalProgress lable="CSS" value="90" />
+          <HorizentalProgress lable="JavaScript" value="80" />
         </div>
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">

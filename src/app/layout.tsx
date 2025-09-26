@@ -3,7 +3,7 @@ import { Poppins, Roboto_Mono } from "next/font/google";
 import "keen-slider/keen-slider.min.css";
 import "./globals.scss";
 import "../styles/icons.scss";
-import Overview from "@/components/overview/overview";
+import Overview from "../components/overview/overview";
 // import BgShadow from "@/components/BgShadow/Bgshadow";
 // import Footer from "@/components/Footer/Footer";
 // import Menu from "@/components/Menu/Menu";
