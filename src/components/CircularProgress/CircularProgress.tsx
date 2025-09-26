@@ -8,12 +8,12 @@ interface Props {
   color?: string;
 }
 
-const CircularProgress: React.FC<Props> = ({
+const CircularProgress = ({
   value,
   size = 45,
   strokeWidth = 4,
   color = "#f46258",
-}) => {
+}: Props) => {
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (value / 100) * circumference;
