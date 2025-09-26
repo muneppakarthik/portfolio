@@ -4,9 +4,9 @@ import "keen-slider/keen-slider.min.css";
 import "./globals.scss";
 import "../styles/icons.scss";
 import Overview from "../components/overview/overview";
-// import BgShadow from "@/components/BgShadow/Bgshadow";
-// import Footer from "@/components/Footer/Footer";
-// import Menu from "@/components/Menu/Menu";
+import BgShadow from "@/components/BgShadow/Bgshadow";
+import Footer from "@/components/Footer/Footer";
+import Menu from "@/components/Menu/Menu";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -45,13 +45,14 @@ export default function RootLayout({
         <div className="app-root">
           <div className="app-wrapper">
             <Overview />
-            <h1>test</h1>
             <main>
-              {/* <BgShadow /> */}
+              <BgShadow />
               {children}
-              {/* <Footer /> */}
+              <Footer />
             </main>
-            <aside>{/* <Menu /> */}</aside>
+            <aside>
+              <Menu />
+            </aside>
           </div>
         </div>
       </body>

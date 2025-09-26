@@ -1,5 +1,5 @@
 import React from "react";
-// import Button from "@/components/Button/Button";
+import Button from "@/components/Button/Button";
 import Image from "next/image";
 
 const NewsLetterCard = ({
@@ -29,7 +29,7 @@ const NewsLetterCard = ({
         <p className="newsletter-container__card-item__description">
           {description}
         </p>
-        {/* <Button label={buttonLabel} variant="outline" /> */}
+        <Button label={buttonLabel} variant="outline" />
       </div>
     </div>
   );

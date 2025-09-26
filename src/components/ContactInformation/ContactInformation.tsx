@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactInformation.scss";
-// import SectionHeading from "@/components/SectionHeading/SectionHeading";
+import SectionHeading from "@/components/SectionHeading/SectionHeading";
 
 const ContactInformation = () => {
   const contactDetails = [
@@ -50,7 +50,7 @@ const ContactInformation = () => {
 
   return (
     <div className="contact-information-container">
-      {/* <SectionHeading label="Contact information" /> */}
+      <SectionHeading label="Contact information" />
       <div className="contact-information-container__wrapper">
         {contactDetails.map((contactVariants, index) => (
           <div

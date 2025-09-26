@@ -1,7 +1,7 @@
 import React from "react";
-// import SectionHeading from "@/components/SectionHeading/SectionHeading";
+import SectionHeading from "@/components/SectionHeading/SectionHeading";
 import "./WorkEducationHistory.scss";
-// import TimeLineCard from "@/components/WorkEducationHistory/TimeLineCard";
+import TimeLineCard from "@/components/WorkEducationHistory/TimeLineCard";
 
 const WorkEducationHistory = () => {
   const educationHistory = [
@@ -32,7 +32,7 @@ const WorkEducationHistory = () => {
   ];
   return (
     <div className="work-education-history">
-      {/* <div className="work-education-history__education work-education-history__column">
+      <div className="work-education-history__education work-education-history__column">
         <SectionHeading label="Education" />
         <div className="work-education-history__education__list-block list-block">
           {educationHistory.map((item, ind) => (
@@ -41,8 +41,8 @@ const WorkEducationHistory = () => {
             </React.Fragment>
           ))}
         </div>
-      </div> */}
-      {/* <div className="work-education-history__work work-education-history__column">
+      </div>
+      <div className="work-education-history__work work-education-history__column">
         <SectionHeading label="Work History" />
         <div className="work-education-history__work__list-block list-block">
           {educationHistory.map((item, ind) => (
@@ -51,7 +51,7 @@ const WorkEducationHistory = () => {
             </React.Fragment>
           ))}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

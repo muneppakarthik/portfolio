@@ -1,7 +1,7 @@
 import React from "react";
 import "./MyServices.scss";
-// import SectionHeading from "@/components/SectionHeading/SectionHeading";
-// import Button from "@/components/Button/Button";
+import SectionHeading from "@/components/SectionHeading/SectionHeading";
+import Button from "@/components/Button/Button";
 
 const MyServices = () => {
   const data = [
@@ -44,7 +44,7 @@ const MyServices = () => {
   ];
   return (
     <div className="my-services-container">
-      {/* <SectionHeading label="My services" /> */}
+      <SectionHeading label="My services" />
       <div className="my-services-container__wrapper">
         {data.map((item, index) => (
           <div
@@ -53,7 +53,7 @@ const MyServices = () => {
           >
             <h5>{item.title}</h5>
             <p>{item.description}</p>
-            {/* <Button label={item.buttonLabel} variant="outline" /> */}
+            <Button label={item.buttonLabel} variant="outline" />
           </div>
         ))}
       </div>
