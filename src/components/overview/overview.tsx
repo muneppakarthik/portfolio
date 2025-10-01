@@ -3,6 +3,7 @@ import "./overview.scss";
 import Image from "next/image";
 import CircularProgress from "@/components/CircularProgress/CircularProgress";
 import HorizentalProgress from "@/components/HorizentalProgress/HorizentalProgress";
+import Overviewclose from "./overviewclose";
 
 const Overview = () => {
   return (
@@ -20,6 +21,7 @@ const Overview = () => {
         <h3>Artur Carter</h3>
         <h4>Front-end Deweloper</h4>
         <h4>Ui/UX Designer</h4>
+        <Overviewclose />
       </div>
 
       <div className="profile-about">

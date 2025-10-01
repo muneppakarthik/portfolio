@@ -1,17 +1,37 @@
+@import "../../styles/mixins.scss";
+
 .overview-wrapper {
   min-width: 290px;
   width: 290px;
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  display: none;
+
+  @include respond-to($breakpoint-lg) {
+    display: block;
+  }
 
   .profile-card {
+    position: relative;
     background: linear-gradient(
       159deg,
       rgba(255, 255, 255, 1) 0%,
       rgba(255, 255, 255, 0.95) 100%
     );
-
     padding: 30px;
     text-align: center;
+    &__close {
+      background-color: unset;
+      border: 0;
+      cursor: pointer;
+      width: 6px;
+      height: 20px;
+      position: absolute;
+      top: 17px;
+      right: 25px;
+      i {
+        font-size: 20px;
+      }
+    }
     &__avatar {
       border-radius: 50%;
       object-fit: cover;
