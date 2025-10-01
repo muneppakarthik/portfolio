@@ -81,9 +81,13 @@ a {
     main {
       position: relative;
       flex: 1;
-      padding: 20px 30px;
+      padding: 20px 15px;
       overflow: hidden;
       background-color: var(--light-gray-bg-2);
+
+      @include respond-to($breakpoint-lg) {
+        padding: 20px 30px;
+      }
     }
   }
 }

@@ -1,5 +1,7 @@
+@import "../../styles/mixins.scss";
+
 .banner-container {
-  margin-top: 30px;
+  margin-top: 15px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("/images/bg.jpg");
   background-size: cover;
@@ -10,14 +12,19 @@
   margin-bottom: 30px;
   position: relative;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: -30px;
-    width: calc(90%);
-    left: 5%;
-    height: 30px;
-    background-color: var(--dark-light-white);
+  @include respond-to($breakpoint-lg) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -30px;
+      width: calc(90%);
+      left: 5%;
+      height: 30px;
+      background-color: var(--dark-light-white);
+    }
   }
   //   &__overlay {
   //     background-color: var(--foreground);
@@ -30,20 +37,39 @@
   &__block {
     // z-index: 1;
     // position: relative;
+    text-align: center;
+    @include respond-to($breakpoint-lg) {
+      text-align: start;
+    }
     h2 {
       margin-bottom: 15px;
       color: var(--dark-light-white);
-      font-size: 36px;
+      font-size: 46px;
       font-weight: 800;
       line-height: 1.2;
+      @include respond-to($breakpoint-lg) {
+        font-size: 36px;
+      }
     }
     p,
     span {
+      font-size: 16px;
       margin-bottom: 25px;
       color: var(--dark-light-white);
+      @include respond-to($breakpoint-lg) {
+        font-size: 13px;
+      }
       i {
         color: var(--orange);
         font-size: 16px;
+      }
+    }
+
+    p {
+      min-height: 55px;
+      @include respond-to($breakpoint-lg) {
+        font-size: 13px;
+        min-height: auto;
       }
     }
   }

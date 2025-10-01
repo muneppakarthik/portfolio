@@ -1,5 +1,17 @@
+@import "../../styles/mixins.scss";
+
 .work-education-history {
   display: flex;
+  flex-direction: column;
+  @include respond-to($breakpoint-md) {
+    flex-direction: row;
+    &__education {
+      width: 50%;
+    }
+    &__work {
+      width: 50%;
+    }
+  }
   &__column {
     .list-block {
       position: relative;
@@ -15,11 +27,11 @@
     }
   }
   &__education {
-    width: 50%;
+    width: 100%;
     padding: 15px;
   }
   &__work {
-    width: 50%;
+    width: 100%;
     padding: 15px;
   }
   &__card-item {

@@ -1,5 +1,13 @@
+@import "../../styles/mixins.scss";
+
 .section-heading-container {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @include respond-to($breakpoint-md) {
+    text-align: start;
+    margin-bottom: 30px;
+  }
 
   h4 {
     font-size: 17px;

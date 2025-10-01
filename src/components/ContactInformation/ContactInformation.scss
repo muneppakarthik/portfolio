@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .contact-information-container {
   margin-bottom: 30px;
   &__wrapper {
@@ -5,9 +7,16 @@
     gap: 30px;
     flex-wrap: wrap;
     &__service-list-item {
-      width: calc(33.33% - 20px);
+      width: 110%;
       background-color: var(--dark-light-white);
       padding: 45px 30px;
+
+      @include respond-to($breakpoint-md) {
+        width: calc(50% - 15px);
+      }
+      @include respond-to($breakpoint-lg) {
+        width: calc(33.33% - 20px);
+      }
       &__block {
         display: flex;
         justify-content: space-between;

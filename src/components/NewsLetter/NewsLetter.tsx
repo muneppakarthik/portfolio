@@ -44,11 +44,33 @@ const NewsLetter = () => {
       buttonLabel: "Read More",
     },
   ];
+  const settings = {
+    slides: {
+      perView: 1,
+      spacing: 20,
+    },
+    breakpoints: {
+      "(min-width: 575px)": {
+        slides: {
+          perView: 2,
+          spacing: 20,
+        },
+      },
+      "(min-width: 992px)": {
+        slides: {
+          perView: 3,
+          spacing: 20,
+        },
+      },
+    },
+  };
+
   return (
     <div className="newsletter-container">
       <SectionHeading label="Newsletter" />
       <CustomSlider
         items={slides}
+        settings={settings}
         renderItem={(item) => <NewsLetterCard {...item} />}
       />
     </div>

@@ -1,12 +1,20 @@
+@import "../../styles/mixins.scss";
+
 .about-project-completetion-feedback {
   display: flex;
   gap: 30px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
+
   .completion-wrapper {
-    width: calc(25% - 19px);
+    width: calc(50% - 15px);
     display: flex;
     gap: 10px;
     align-items: center;
+
+    @include respond-to($breakpoint-md) {
+      width: calc(25% - 23px);
+    }
     h2 {
       color: var(--orange);
       width: min-content;
