@@ -5,9 +5,9 @@ import CircularProgress from "@/components/CircularProgress/CircularProgress";
 import HorizentalProgress from "@/components/HorizentalProgress/HorizentalProgress";
 import Overviewclose from "./overviewclose";
 
-const Overview = () => {
+const Overview = ({ className = "" }) => {
   return (
-    <div className="overview-wrapper">
+    <div className={`overview-wrapper ${className}`}>
       <div className="profile-card">
         <div className="image-block">
           <Image

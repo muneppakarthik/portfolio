@@ -46,7 +46,7 @@ const Header = () => {
       )}
       {openOverView && (
         <Model variant="from-left">
-          <Overview />
+          <Overview className="mobile-view" />
         </Model>
       )}
     </header>
