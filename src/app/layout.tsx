@@ -7,6 +7,8 @@ import Overview from "../components/overview/overview";
 import BgShadow from "@/components/BgShadow/Bgshadow";
 import Footer from "@/components/Footer/Footer";
 import Menu from "@/components/Menu/Menu";
+import Header from "@/components/Header/Header";
+import { GlobalProvider } from "@/context/GlobalContext";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -42,19 +44,22 @@ export default function RootLayout({
         />
       </head>
       <body className={`${poppins.variable} ${robotoMono.variable}`}>
-        <div className="app-root">
-          <div className="app-wrapper">
-            <Overview />
-            <main>
-              <BgShadow />
-              {children}
-              <Footer />
-            </main>
-            <aside>
-              <Menu />
-            </aside>
+        <GlobalProvider>
+          <div className="app-root">
+            <Header />
+            <div className="app-wrapper">
+              <Overview />
+              <main>
+                <BgShadow />
+                {children}
+                <Footer />
+              </main>
+              <aside>
+                <Menu />
+              </aside>
+            </div>
           </div>
-        </div>
+        </GlobalProvider>
       </body>
     </html>
   );
