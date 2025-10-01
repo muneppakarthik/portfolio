@@ -1,8 +1,15 @@
+@import "../../styles/mixins.scss";
+
 aside {
   z-index: 1;
   width: 80px;
   background-color: var(--light-grap-bg);
   box-shadow: -1px 0px 8px 0px rgba(15, 15, 20, 0.2);
+  display: none;
+
+  @include respond-to($breakpoint-lg) {
+    display: block;
+  }
 }
 .menu-container {
   height: 100%;
@@ -34,6 +41,47 @@ aside {
         writing-mode: vertical-rl;
         font-weight: 500;
         text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.model-container {
+  &__wrapper {
+    .menu-container__main-list {
+      background-color: var(--light-grap-bg);
+      height: 100%;
+      &__close-icon {
+        background-color: var(--dark-light-white);
+        box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        button {
+          background-color: unset;
+          cursor: pointer;
+          border: 0;
+          margin-left: 30px;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+      ul {
+        margin-top: 0;
+        align-items: flex-start;
+        gap: 0;
+        li {
+          writing-mode: unset;
+          width: 100%;
+          a {
+            padding: 7px 30px;
+            line-height: 22px;
+            width: 100%;
+            display: block;
+          }
+        }
       }
     }
   }
