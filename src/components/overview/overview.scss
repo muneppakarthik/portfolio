@@ -20,7 +20,11 @@
   }
 
   .profile-card {
-    position: relative;
+    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: linear-gradient(
       159deg,
       rgba(255, 255, 255, 1) 0%,
@@ -35,8 +39,8 @@
       width: 6px;
       height: 20px;
       position: absolute;
-      top: 17px;
-      right: 25px;
+      top: 0;
+      right: -70px;
       i {
         font-size: 20px;
       }
@@ -50,6 +54,7 @@
       object-fit: cover;
     }
     .image-block {
+      position: relative;
       width: 90px;
       height: 90px;
       margin: auto;
@@ -68,6 +73,11 @@
   }
 
   .profile-about {
+    overflow-y: auto;
+    margin-top: 235px;
+    margin-bottom: 50px;
+    height: calc(100vh - 285px);
+    scrollbar-width: none;
     background-color: var(--light-grap-bg);
     // height: 300px;
     box-shadow: 0px -2px 0px 0px rgba(15, 15, 20, 0.2);
@@ -145,7 +155,12 @@
   }
 
   .profile-footer {
-    box-shadow: 0px -2px 0px 0px rgba(15, 15, 20, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+
     ul {
       height: 50px;
       padding: 0 35px;
