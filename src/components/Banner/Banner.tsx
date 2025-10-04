@@ -4,7 +4,7 @@ import Button from "@/components/Button/Button";
 
 const Banner = () => {
   return (
-    <div className="banner-container">
+    <section className="banner-container" id="home">
       {/* <div className="banner-container__overlay" /> */}
       <div className="banner-container__block">
         <h2>
@@ -17,7 +17,7 @@ const Banner = () => {
         </p>
         <Button />
       </div>
-    </div>
+    </section>
   );
 };
 

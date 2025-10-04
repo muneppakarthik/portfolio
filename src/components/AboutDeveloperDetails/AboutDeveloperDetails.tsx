@@ -21,14 +21,14 @@ const AboutDeveloperDetails = () => {
     },
   ];
   return (
-    <div className="about-project-completetion-feedback">
+    <section className="about-project-completetion-feedback" id="about-me">
       {data.map((item, index) => (
         <div className="completion-wrapper" key={index}>
           <h2>{item.value} +</h2>
           <p>{item.label}</p>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 
