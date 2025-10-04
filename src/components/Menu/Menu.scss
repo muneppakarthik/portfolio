@@ -1,10 +1,14 @@
 @import "../../styles/mixins.scss";
 
 aside {
+  position: absolute;
+  right: 0;
+  top: 0;
+  // height: 100%;
   z-index: 1;
   width: 80px;
-  background-color: var(--light-grap-bg);
-  box-shadow: -1px 0px 8px 0px rgba(15, 15, 20, 0.2);
+  // background-color: var(--light-grap-bg);
+  // box-shadow: -1px 0px 8px 0px rgba(15, 15, 20, 0.2);
   display: none;
 
   @include respond-to($breakpoint-lg) {
@@ -12,6 +16,12 @@ aside {
   }
 }
 .menu-container {
+  width: 80px;
+  background-color: var(--light-grap-bg);
+  box-shadow: -1px 0px 8px 0px rgba(15, 15, 20, 0.2);
+  position: fixed;
+  height: 100%;
+  // z-index: 2;
   height: 100%;
   &__menu-icon {
     background-color: var(--dark-light-white);

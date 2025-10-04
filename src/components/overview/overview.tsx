@@ -17,11 +17,11 @@ const Overview = ({ className = "" }) => {
             className="profile-card__avatar"
             alt="avatar"
           />
+          <Overviewclose />
         </div>
         <h3>Artur Carter</h3>
         <h4>Front-end Deweloper</h4>
         <h4>Ui/UX Designer</h4>
-        <Overviewclose />
       </div>
 
       <div className="profile-about">
