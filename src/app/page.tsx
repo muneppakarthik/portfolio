@@ -6,11 +6,13 @@ import ContactInformation from "@/components/ContactInformation/ContactInformati
 import GetInTouch from "@/components/GetInTouch/GetInTouch";
 import NewsLetter from "@/components/NewsLetter/NewsLetter";
 import WorkEducationHistory from "@/components/WorkEducationHistory/WorkEducationHistory";
+import AboutMe from "@/components/AboutMe/AboutMe";
 
 export default function Home() {
   return (
     <div className="home-container">
       <Banner />
+      <AboutMe />
       <AboutDeveloperDetails />
       <MyServices />
       <ContactInformation />

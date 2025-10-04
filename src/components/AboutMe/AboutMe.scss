@@ -1,0 +1,19 @@
+@import "../../styles/mixins.scss";
+
+.about-container {
+  margin-bottom: 30px;
+  h2 {
+    color: var(--secondary);
+    font-size: 22px;
+    line-height: 1.7;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  button {
+    margin-top: 10px;
+  }
+}
