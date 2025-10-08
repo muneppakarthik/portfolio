@@ -66,6 +66,7 @@
       line-height: 1.2;
       margin-bottom: 10px;
       margin-top: 15px;
+      text-transform: capitalize;
     }
     h4 {
       font-weight: 400;
@@ -124,6 +125,7 @@
         justify-content: space-around;
         li {
           width: min-content;
+          text-align: center;
         }
       }
 

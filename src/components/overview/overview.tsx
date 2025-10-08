@@ -6,6 +6,99 @@ import HorizentalProgress from "@/components/HorizentalProgress/HorizentalProgre
 import Overviewclose from "./overviewclose";
 
 const Overview = ({ className = "" }) => {
+  const aboutDetails = [
+    {
+      label: "Residence",
+      value: "India",
+    },
+    {
+      label: "City",
+      value: "Bengalore",
+    },
+    {
+      label: "Age",
+      value: "27",
+    },
+  ];
+
+  const languages = [
+    {
+      label: "English",
+      value: 90,
+    },
+    {
+      label: "Kannada",
+      value: 90,
+    },
+    {
+      label: "Telugu",
+      value: 100,
+    },
+    {
+      label: "Tamil",
+      value: 95,
+    },
+  ];
+
+  const skills = [
+    {
+      label: "HTML",
+      value: "95",
+    },
+    {
+      label: "CSS",
+      value: "95",
+    },
+    {
+      label: "JavaScript",
+      value: "90",
+    },
+    {
+      label: "React JS",
+      value: "95",
+    },
+    {
+      label: "Next JS",
+      value: "90",
+    },
+    {
+      label: "TypeScript",
+      value: "85",
+    },
+    {
+      label: "JQuery",
+      value: "80",
+    },
+  ];
+  const additionalSkills = [
+    "Bootstrap, React Bootstrap",
+    "React Material UI",
+    "SCSS",
+    "Webpack",
+    "React Redux, Router, Hooks",
+    "Axios, REST, GraphQL",
+    "RazorPay & MultisafePay",
+    "WCAG Accessibility Standards",
+    "GitHub, Bitbucket",
+    "Figma, Adobe XD",
+    "Light House, Core Web Vitals",
+    "SEO",
+  ];
+
+  const socialLinks = [
+    {
+      icon: "fab fa-linkedin",
+      link: "https://in.linkedin.com",
+    },
+    // {
+    //   icon: "fa-brands fa-square-x-twitter",
+    //   link: "https://in.linkedin.com/",
+    // },
+    {
+      icon: "fa-brands fa-github",
+      link: "https://github.com/muneppakarthik",
+    },
+  ];
   return (
     <div className={`overview-wrapper ${className}`}>
       <div className="profile-card">
@@ -19,101 +112,69 @@ const Overview = ({ className = "" }) => {
           />
           <Overviewclose />
         </div>
-        <h3>Artur Carter</h3>
-        <h4>Front-end Deweloper</h4>
-        <h4>Ui/UX Designer</h4>
+        <h3>m karthik</h3>
+        <h4>Front-end Developer</h4>
+        <h4>React JS</h4>
       </div>
 
       <div className="profile-about">
         <div className="profile-about__block">
           <ul className="address">
-            <li>
-              <h6>Residence:</h6>
-              <span>Canada</span>
-            </li>
-            <li>
-              <h6>City:</h6>
-              <span>Toronto</span>
-            </li>
-            <li>
-              <h6>Age:</h6>
-              <span>26</span>
-            </li>
+            {aboutDetails.map((item, ind) => (
+              <li key={ind}>
+                <h6>{item.label}:</h6>
+                <span>{item.value}</span>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">
           <ul className="profile-about__block__circle">
-            <li>
-              <CircularProgress value={100} />
-              <span>French</span>
-            </li>
-            <li>
-              <CircularProgress value={90} />
-              <span>English</span>
-            </li>
-            <li>
-              <CircularProgress value={70} />
-              <span>Spanish</span>
-            </li>
+            {languages.map((item, ind) => (
+              <li key={ind}>
+                <CircularProgress value={item.value} />
+                <span>{item.label}</span>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">
-          <HorizentalProgress lable="html" value="90" />
-          <HorizentalProgress lable="CSS" value="90" />
-          <HorizentalProgress lable="JavaScript" value="80" />
-          <HorizentalProgress lable="html" value="90" />
-          <HorizentalProgress lable="CSS" value="90" />
-          <HorizentalProgress lable="JavaScript" value="80" />
+          {skills.map((item, ind) => (
+            <React.Fragment key={ind}>
+              <HorizentalProgress lable={item.label} value={item.value} />
+            </React.Fragment>
+          ))}
         </div>
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">
           <ul className="additonal-skills">
-            <li>
-              <i className="fa-solid fa-check" />
-              <span>Bootstrap, Materialize</span>
-            </li>
-            <li>
-              <i className="fa-solid fa-check" />
-              <span>Stylus, Sass, Less</span>
-            </li>
-            <li>
-              <i className="fa-solid fa-check" />
-              <span>Gulp, Webpack, Grunt</span>
-            </li>
-            <li>
-              <i className="fa-solid fa-check" />
-              <span>Stylus, Sass, Less</span>
-            </li>
-            <li>
-              <i className="fa-solid fa-check" />
-              <span>Gulp, Webpack, Grunt</span>
-            </li>
+            {additionalSkills.map((item, ind) => (
+              <li key={ind}>
+                <i className="fa-solid fa-check" />
+                <span>{item}</span>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="profile-about__block__divider" />
         <div className="profile-about__block">
-          <button className="download-cv">
+          <a href="/resume.pdf" download="/resume.pdf" className="download-cv">
             DOWNLOAD CV <i className="fa-solid fa-download"></i>
-          </button>
+          </a>
         </div>
       </div>
 
       <div className="profile-footer">
         <ul>
-          <li>
-            <i className="icon fab fa-linkedin" />
-          </li>
-          <li>
-            <i className="icon fa-brands fa-square-x-twitter"></i>
-          </li>
-          <li>
-            <i className="icon fa-brands fa-github"></i>
-          </li>
-          <li>
-            <i className="icon fa-brands fa-github"></i>
-          </li>
+          {socialLinks.map((item, ind) => (
+            <li key={ind}>
+              <a href={item.link} target="__blank">
+                <i className={`icon ${item.icon}`} />
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
